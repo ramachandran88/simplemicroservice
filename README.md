@@ -22,19 +22,19 @@ The application is ready for usage.
 
 ## Api's
 1. POST /api/open-account
-   request payload - {"name":"ram","balance":1000.50} ,
-   response payload - {"accountId" : 54673,""name":"ram","balance":1000.50}
-   Success Status - 201;
+   - request payload - {"name":"ram","balance":1000.50} ,
+   - response payload - {"accountId" : 54673,""name":"ram","balance":1000.50}
+   - Success Status - 201;
 
 2. GET /api/accounts/:accountId
-   response payload - {"accountId" : 54673,""name":"ram","balance":1000.50}
-   Success Status - 201;
+   - response payload - {"accountId" : 54673,""name":"ram","balance":1000.50}
+   - Success Status - 201;
 
 3. POST /api/money-transfer
-   request payload - {"sourceAccountId":4567, "destinationAccountId": 123456, "transferAmount":1000.50}
-   Success Status - 200;
+   - request payload - {"sourceAccountId":4567, "destinationAccountId": 123456, "transferAmount":1000.50}
+   - Success Status - 200;
 
 4. POST /api/money-transfer failure
-   request payload - {"sourceAccountId":123456, "destinationAccountId": 123456, "transferAmount":1000.50}
-   response payload - [{"key" : "accountId", "message" : "same source and destination account not allowed"}]
-   failure Status - 400;
+   - request payload - {"sourceAccountId":123456, "destinationAccountId": 123456, "transferAmount":1000.50}
+   - response payload - [{"key" : "accountId", "message" : "same source and destination account not allowed"}]
+   - failure Status - 400;
