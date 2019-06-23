@@ -42,6 +42,7 @@ public class OpenAccountHandlerTest extends TestHelper {
     @AfterClass
     public static void tearDown() {
         Spark.stop();
+        Spark.awaitStop();
     }
 
     @BeforeClass
